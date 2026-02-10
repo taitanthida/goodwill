@@ -1,48 +1,62 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GoodWill</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f5;
+  color: #333;
+}
 
-  <header>
-    <h1>GoodWill</h1>
-    <p>Donate what you don’t need. Receive what you do.</p>
-  </header>
+header {
+  background: #2ecc71;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
 
-  <nav>
-    <a href="#donate">Donate</a>
-    <a href="#receive">Receive</a>
-    <a href="#about">About</a>
-  </nav>
+header nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-  <section id="donate">
-    <h2>Donate Items</h2>
-    <p>Give away unused items to people who truly need them.</p>
-    <button>Donate Now</button>
-  </section>
+main {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+}
 
-  <section id="receive">
-    <h2>Receive Items</h2>
-    <p>Browse donated items and request what you need.</p>
-    <button>Browse Items</button>
-  </section>
+.card {
+  background: white;
+  width: 300px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
 
-  <section id="about">
-    <h2>About GoodWill</h2>
-    <p>
-      GoodWill is a community platform that connects donors and receivers
-      to reduce waste and support reuse.
-    </p>
-  </section>
+.card h2 {
+  margin-bottom: 10px;
+}
 
-  <footer>
-    <p>© 2026 GoodWill Platform</p>
-  </footer>
+.card button {
+  background: #2ecc71;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
 
-</body>
-</html>
+.card button:hover {
+  background: #27ae60;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+}
